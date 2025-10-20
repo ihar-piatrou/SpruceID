@@ -31,7 +31,6 @@ The current implementation uses `ConcurrentDictionary` without TTL or automatic 
 - Memory grows unbounded as nonces accumulate
 - No automatic cleanup mechanism
 - Not suitable for distributed/scaled deployments
-- Race conditions in multi-instance scenarios
 
 ## Recommended Future Improvements
 
