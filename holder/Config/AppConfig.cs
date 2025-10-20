@@ -18,7 +18,7 @@
             static string TrimEndSlash(string s) => s.EndsWith("/") ? s.TrimEnd('/') : s;
 
             var holderId = GetEnv("HOLDER_ID", "did:example:holder-123-test");
-            var verifierBaseRaw = GetEnv("VERIFIER_BASE", "https://localhost:7262");
+            var verifierBaseRaw = GetEnv("VERIFIER_BASE", "http://localhost:5002");
             var verifierBase = TrimEndSlash(verifierBaseRaw);
 
             // Allow explicit override or derive from base
